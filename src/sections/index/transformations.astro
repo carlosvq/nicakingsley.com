@@ -1,0 +1,121 @@
+---
+import { cn } from "../../utils/cn";
+
+const transformations = [
+  "/t/transformation_1.jpg",
+  "/t/transformation_2.jpg",
+  "/t/transformation_3.jpg",
+  "/t/transformation_4.jpg",
+  "/t/transformation_5.jpg",
+  "/t/transformation_6.jpg",
+];
+---
+
+<div class={cn(["bg-background", "px-8", "lg:py-8"])} id="gallery">
+  <div
+    class={cn(["gdlr-core-pbf-background-wrap"])}
+    style="background-color: #0c0c0c;"
+  >
+    <div
+      class={cn(["gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"])}
+      style="background-size: cover; background-position: center;"
+      data-parallax-speed="0"
+    >
+    </div>
+  </div>
+</div>
+
+<div class={cn(["gdlr-core-pbf-wrapper-content gdlr-core-js bg-background"])}>
+  <div
+    class={cn([
+      "gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full-no-space",
+    ])}
+  >
+    <div
+      class={cn([
+        "gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first",
+      ])}
+      id="gdlr-core-column-29724"
+    >
+      <div
+        class={cn(["gdlr-core-pbf-column-content-margin gdlr-core-js"])}
+        style="padding: 0px 0px 0px 0px;"
+      >
+        <div class={cn(["gdlr-core-pbf-background-wrap"])}></div>
+        <div class={cn(["gdlr-core-pbf-column-content clearfix gdlr-core-js"])}>
+          <div class={cn(["gdlr-core-pbf-element"])}>
+            <div
+              class={cn([
+                "gdlr-core-gallery-item clearfix gdlr-core-gallery-item-style-grid-no-space gdlr-core-item-pdlr",
+              ])}
+            >
+              <div
+                class={cn([
+                  "gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix",
+                ])}
+                data-layout="fitrows"
+              >
+                {
+                  transformations.map((t, index) => (
+                    <div
+                      class={cn([
+                        "gdlr-core-item-list gdlr-core-gallery-column gdlr-core-column-10",
+                        index === 0 ? "gdlr-core-column-first" : "",
+                      ])}
+                    >
+                      <div
+                        class={cn([
+                          "gdlr-core-gallery-list gdlr-core-media-image",
+                        ])}
+                      >
+                        <a
+                          class={cn(["gdlr-core-lightgallery gdlr-core-js"])}
+                          href={t}
+                          data-lightbox-group="gdlr-core-img-group-1"
+                        >
+                          <img
+                            class={cn(["scale-110"])}
+                            src={t}
+                            alt="11"
+                            width="600"
+                            height="600"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
+
+          <div class={cn(["gdlr-core-pbf-element bg-background-secondary"])}>
+            <div
+              class={cn([
+                "gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align",
+                "pb-0",
+              ])}
+            >
+              <a
+                class={cn([
+                  "gdlr-core-button gdlr-core-button-transparent gdlr-core-center-align gdlr-core-button-no-border",
+                ])}
+                href="https://www.instagram.com/juniorvillegas__"
+                target="_blank"
+                id="gdlr-core-button-id-29355"
+              >
+                <span class={cn(["gdlr-core-content"])}>
+                  <i
+                    class={cn([
+                      "gdlr-core-pos-left fa fa-instagram text-xl leading-none",
+                    ])}></i>
+                  Sigueme en @juniorvillegas__
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

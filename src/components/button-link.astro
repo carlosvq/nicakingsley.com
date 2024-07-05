@@ -1,0 +1,41 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+import { cn } from "../utils/cn";
+
+interface Props extends HTMLAttributes<"a"> {}
+
+const { ...props } = Astro.props;
+---
+
+<a
+  class={cn([
+    "gdlr-core-button gdlr-core-left-align",
+    "bg-primary border-0",
+    "hover:bg-secondary",
+  ])}
+  style="
+    transform: skewX(170deg);
+    -webkit-transform: skewX(170deg);
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 17px 35px 17px 35px;
+    text-transform: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+  "
+  {...props}
+>
+  <span
+    class={cn(["gdlr-core-content"])}
+    style="
+      transform: skewX(-170deg);
+      -webkit-transform: skewX(-170deg);
+    "
+  >
+    <slot />
+  </span>
+</a>

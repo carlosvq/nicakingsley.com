@@ -1,0 +1,82 @@
+---
+import { cn } from "../utils/cn";
+---
+
+<div id="about">
+  <header class={cn("bg-background")}>
+    <div class={cn("container flex justify-between mx-auto py-6 px-8")}>
+      <img class={cn("h-12")} src="/jr-logo.svg" title="logo-trainer" />
+
+      <div class={cn(["flex items-center space-x-6", "text-white"])}>
+        <div class={cn("items-center text-sm hidden", "lg:flex")}>
+          <a href="/plans"> Planes </a>
+        </div>
+        <div class={cn("items-center text-sm hidden", "lg:flex")}>
+          <a href="tel:18495900297">
+            <i class={cn("fa fa-phone")}></i>
+            +1 849 590 0297
+          </a>
+        </div>
+        <div class={cn("items-center text-sm hidden", "lg:flex")}>
+          <a href="mailto:coach@juniorvillegas.com">
+            <i class={cn("fa fa-envelope")}></i>
+            coach@juniorvillegas.com
+          </a>
+        </div>
+
+        <div>
+          <div
+            class={cn(["zyth-modern-menu"])}
+            id="zyth-right-menu"
+            data-back-text="Back"
+          >
+            <a
+              class={cn(["flex items-center zyth-modern-menu-icon text-2xl"])}
+              href="#"
+            >
+              <i class={cn(["fa fa-bars"])}></i>
+            </a>
+
+            <div class={cn(["zyth-modern-menu-nav-base"])}>
+              <ul id="menu-one-page-menu-1" class={cn(["menu"])}>
+                <li class={cn(["menu-item"])}>
+                  <a href="#about">Acerca de mí</a>
+                </li>
+                <li class={cn(["menu-item"])}>
+                  <a href="/plans">Planes de trabajo</a>
+                </li>
+                <li class={cn(["menu-item"])}>
+                  <a href="#coaching">Coaching</a>
+                </li>
+                <li class={cn(["menu-item"])}>
+                  <a href="#testimonial">Testimonios</a>
+                </li>
+                <li class={cn(["menu-item"])}>
+                  <a href="#contact">Contacto</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class={cn([
+                "zyth-modern-menu-content zyth-navigation-font zyth-full",
+              ])}
+            >
+              <div class={cn(["zyth-modern-menu-display"])}>
+                <div class={cn(["zyth-modern-menu-close"])}></div>
+                <div class={cn(["zyth-modern-menu-nav"])}></div>
+                <div class={cn(["zyth-modern-menu-info clearfix"])}>
+                  <div class={cn(["zyth-left-text"])}>
+                    <a href="#"> coach@juniorvillegas.com</a>
+                    <br />
+                    +1 849 590 0297
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
